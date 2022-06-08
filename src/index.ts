@@ -1,6 +1,6 @@
 (async ()=> {
   const myCart = [];
-  const products = [];
+  const products: any[] = [];
   const limit = 2;
 
   async function getProducts() {
@@ -17,7 +17,7 @@
     }
     return total;
   }
-  function addProduct(index) {
+  function addProduct(index: number) {
     if (getTotal() <= limit) {
       myCart.push(products[index]);
     }
@@ -26,12 +26,22 @@
   await getProducts();
   addProduct(1);
   addProduct(2);
+  
   const total = getTotal();
   console.log(total);
-  const person = {
-    name: 'Nicolas',
-    lastName: 'Molina'
+  
+  type person = {
+    name: string,
+    lastname: string,
+    age: number,
   }
+  
+  const persona: person = {
+    name: 'Orlando',
+    lastname: 'Mendoza',
+    age: 22,
+  }
+  
   // const rta = person +  limit;
   // console.log(rta);
 });
