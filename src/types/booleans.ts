@@ -24,5 +24,5 @@ if(son.isStuding){
   console.log("edad: ", son.age)
 }
 
-const string = "Orlando";
+export const string = "Orlando";
 console.log(string);
