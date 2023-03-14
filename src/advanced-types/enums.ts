@@ -1,4 +1,6 @@
-enum USER { //Por convención se escriben en mayúsculas
+//Por convención se escriben en mayúsculas
+
+enum USER { 
   ADMIN = "admin",
   USER = "user",
 }
