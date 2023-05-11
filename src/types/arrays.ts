@@ -23,4 +23,8 @@
   numeros.push({})
   numeros.push([])
   
+  const names: Array<string> = ["Orlando", "Sofia", "Mary", "Orlando", "Leomarby"]
+  
+  const lastnamesAndAges: Array<string | number> = ["Mendoza", "Vargas", "Gonzalez", 23, 48]
+  
 })()
